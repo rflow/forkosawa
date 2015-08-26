@@ -1,11 +1,9 @@
 # Forkosawa
---------------
 
-Modifies [Fukasawa](http://www.andersnoren.se/teman/fukasawa-wordpress-theme/) - a theme by [Anders Norén](http://www.andersnoren.se/)
+A lovingly rflowed version of [Fukasawa](http://www.andersnoren.se/teman/fukasawa-wordpress-theme/) - a theme by [Anders Norén](http://www.andersnoren.se/)
 
 
 # Copyright
---------------
 
 Fukasawa WordPress Theme, Copyright 2015 Anders Norén
 Fukasawa is distributed under the terms of the GNU GPL v2
@@ -13,7 +11,6 @@ Fukasawa is distributed under the terms of the GNU GPL v2
 
 
 # Install Steps
---------------
 
 1. Upload the theme.
 2. Activate the theme.
@@ -21,7 +18,6 @@ Fukasawa is distributed under the terms of the GNU GPL v2
 
 
 # Use the gallery post format
---------------
 
 1. Go to Admin > Posts > Add New.
 2. Select the "Gallery" post format in the Post Attributes box.
@@ -32,7 +28,6 @@ Fukasawa is distributed under the terms of the GNU GPL v2
 
 
 # Use the video post format
---------------
 
 1. Go to Admin > Posts > Add New.
 2. Select the "Video" post format in the Post Attributes box.
@@ -43,7 +38,6 @@ Fukasawa is distributed under the terms of the GNU GPL v2
 
 
 # Licenses
---------------
 
 Lato font license : SIL Open Font License, 1.1 http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
