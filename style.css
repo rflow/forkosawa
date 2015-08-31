@@ -2039,9 +2039,6 @@ img#wpstats { display: none; }
   height: 50px;
 }
 
-.home-page-content {
-}
-
 .rflow-logo .line-a {
 	fill: none;
 	stroke: #999;
@@ -2052,6 +2049,68 @@ img#wpstats { display: none; }
 	fill: none;
 	stroke: #888;
 	stroke-width: 2px;
+}
+
+.post-content .home-page-content {
+	width: 100%;
+	margin-top: -50px;
+	/*height: 200px;*/
+	/*padding: 20px;*/
+}
+
+
+.rflow-mugshot {
+	float: left;
+	width: 150px;
+	height: 150px;
+	background-image: url(images/photos/mugshot.jpg);
+}
+
+.rflow-vital-statistics {
+	float: right;
+	width: calc(100% - 175px);
+/*	background-color: #eaeaea;*/
+}
+
+.post-content h1.rflow-title {
+	font-size: 1.5em;
+	margin: 0;
+  margin-bottom: 7px;
+}
+
+.post-content .rflow-role {
+	line-height: 1;
+  margin-bottom: 5px;
+}
+
+.post-content .rflow-asl {
+	line-height: 1;
+  margin-bottom: 10px;
+}
+
+.rflow-asl span {
+	clear: none;
+  font-size: 0.75em;
+  color: #777;
+  margin: 0;
+  line-height: 1;
+}
+
+.post-content table.rflow-info-table tbody > tr > td {
+  height: 20px;
+  padding: 0;
+	background-color: white;
+  font-size: 0.75em;
+  border: none;
+}
+
+.post-content .rflow-info-field {
+	color: #aaa;
+	width: 80px;
+}
+
+.post-content .rflow-info-value {
+
 }
 
 .posts .post {
