@@ -2,6 +2,33 @@
 
 <div class="content">
 
+	<?php if ( is_category() ) : ?>
+		<div class="home-page-content">
+		  <div class="rflow-mugshot"></div>
+		  <div class="rflow-vital-statistics">
+		    <h1 class="rflow-title">Alastair Dant</h1>
+		    <p class="rflow-role">Senior Product Engineer</p>
+		    <p class="rflow-asl">
+		      <span>SF Bay Area, CA</span><span> | </span><span>Computer Software</span>
+		    </p>
+		    <table class="rflow-info-table">
+		      <tr>
+		        <td class="rflow-info-field">Current</td>
+		        <td class="rflow-info-value">Lead UI Engineer, Riffyn, Inc</td>
+		      </tr>
+		      <tr>
+		        <td class="rflow-info-field">Previously</td>
+		        <td class="rflow-info-value">New York Times, Guardian News, Mind Candy</td>
+		      </tr>
+		      <tr>
+		        <td class="rflow-info-field">Education</td>
+		        <td class="rflow-info-value">University College London</td>
+		      </tr>
+		    </table>
+		  </div>
+		</div>
+	<?php endif; ?>
+
 	<div class="page-title">
 			
 		<div class="section-inner">
