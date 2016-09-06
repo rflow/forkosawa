@@ -2051,23 +2051,68 @@ img#wpstats { display: none; }
 	stroke-width: 2px;
 }
 
-.home-page-content {
-	width: 100%;
-	margin-top: -50px;
-	height: 200px;
+.rflow-vcard {
+	width: calc(100% - 10px);
+	height: 170px;
+	display: -webkit-flex;
+	-webkit-flex-flow: row nowrap;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 
 .rflow-mugshot {
-	float: left;
+	-webkit-flex: 0 0 150px;
+	flex: 0 0 150px;
 	width: 150px;
 	height: 150px;
 	background-image: url(images/photos/mugshot.jpg);
 }
 
 .rflow-vital-statistics {
-	float: right;
-	width: calc(100% - 175px);
+	-webkit-flex: 1 0 auto;
+	flex: 1 0 auto;
 	margin-top: 3px;
+  padding-left: 15px;
+}
+
+.rflow-contact-me {
+	-webkit-flex: 0 0 30px;
+	flex: 0 0 30px;	
+}
+
+.rflow-contact-me li {
+	margin-bottom: 10px;
+}
+
+.rflow-contact-me a {
+	position: relative;
+	display: block;
+	background-color: #7d95aa;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transition: opacity 1s;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.rflow-contact-me a:hover {
+	opacity: 1;
+}
+
+.rflow-contact-me .genericon {
+	position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 20px;
+	color: white;
+}
+
+.rflow-contact-me .genericon-linkedin {
+	top: 3px;
 }
 
 h1.rflow-title {
@@ -2104,14 +2149,14 @@ h1.rflow-title {
 
 .rflow-info-field {
 	color: #aaa;
-	width: 80px;
+	width: 70px;
 }
 
 .rflow-info-value {
 
 }
 
-.posts .post {
+.posts .post, .rflow-vcard {
 	-webkit-box-shadow: 1px 0px 7px 0px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow:    1px 0px 7px 0px rgba(0, 0, 0, 0.1);
 	box-shadow:         1px 0px 7px 0px rgba(0, 0, 0, 0.1);
@@ -2536,12 +2581,6 @@ h1.rflow-title {
 		font-size: 14px;
 	}
 
-	.home-page-content {
-		width: 100%;
-		margin-top: 0;
-		height: auto;
-	}
-
 	.post.single .post-inner {
     padding-top: 1px;
 	}
@@ -2556,47 +2595,92 @@ h1.rflow-title {
 }
 
 @media (max-width: 600px) {
-	.home-page-content {
-		margin-bottom: 10px;
+	.rflow-vcard {
+		position: relative;
+		width: 100%;
+		height: 32vw;
+		padding: 1vw;
 	}
 
 	.rflow-mugshot {
-    display: inline-block;
-    float: none;
-    width: 30vw;
-    height: 30vw;
-    background-size: cover;
+		-webkit-flex: 0 0 30vw;
+		flex: 0 0 30vw;
+	  width: 30vw;
+	  height: 30vw;
+		background-image: url(images/photos/mugshot.jpg);
 	}
 
-	.rflow-vital-statistics {
+/*	.rflow-vital-statistics {
     float: right;
     width: 55vw;
-    margin-left: 3.5vw;
+    margin-left: 0vw;
     margin-top: 3px;	
 	}
-
+*/
 	.rflow-vital-statistics h1.rflow-title {
-		font-size: 7.5vw;
+		font-size: 5vw;
     margin: 0;
     margin-bottom: 2vw;
 	}
 
 	.rflow-vital-statistics .rflow-role {
     line-height: 1;
-    margin-bottom: 2vw;
-    font-size: 4.5vw;
+    margin-bottom: 1vw;
+    font-size: 4vw;
 	}
 
 	.rflow-vital-statistics .rflow-asl {
-	  margin-bottom: 0;
+	  line-height: 11px;
 	}
 
 	.rflow-asl span {
-    font-size: 5vw;
-    line-height: 1.4;
+    font-size: 3vw;
+    line-height: 1;
 	}
 
 	.rflow-info-table {
 		display: none;
+	}
+
+	.rflow-contact-me {
+		position: absolute;
+    bottom: 3px;
+    /*left: 35vw;*/
+    right: 0px;
+	}
+
+	.rflow-contact-me ul {
+		list-style-type: none;
+		display: inline-table;
+	}
+	
+	.rflow-contact-me li {
+		display: table-cell;
+		border-right: 10px solid white;
+    margin-bottom: 0;
+	}
+}
+
+@media (max-width: 400px) {
+
+
+	.rflow-vital-statistics .rflow-asl {
+	  margin-bottom: 3vw;
+	}
+
+	.rflow-info-table .rflow-former {
+		display: none;
+	}
+
+	.rflow-info-field {
+		width: 60px;
+		font-size: 3vw;
+    line-height: 1.3;
+	}
+
+	.rflow-info-field {
+		font-size: 3vw;
+    line-height: 1.3;
+    width: 87px;
 	}
 }

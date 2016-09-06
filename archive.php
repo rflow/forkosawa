@@ -3,7 +3,7 @@
 <div class="content">
 
 	<?php if ( is_category() ) : ?>
-		<div class="home-page-content">
+		<div class="rflow-vcard">
 		  <div class="rflow-mugshot"></div>
 		  <div class="rflow-vital-statistics">
 		    <h1 class="rflow-title">Alastair Dant</h1>
@@ -16,15 +16,39 @@
 		        <td class="rflow-info-field">Current</td>
 		        <td class="rflow-info-value">Lead UI Engineer, Riffyn, Inc</td>
 		      </tr>
-		      <tr>
+		      <tr class="rflow-former">
 		        <td class="rflow-info-field">Previously</td>
 		        <td class="rflow-info-value">New York Times, Guardian News, Mind Candy</td>
 		      </tr>
-		      <tr>
+		      <tr class="rflow-former">
 		        <td class="rflow-info-field">Education</td>
 		        <td class="rflow-info-value">University College London</td>
 		      </tr>
 		    </table>
+		  </div>
+		  <div class="rflow-contact-me">
+		  	<ul>
+		  		<li>
+		  			<a href="mail-to:contact@recursiveflow.com">
+		  				<span class="genericon genericon-mail"></span>
+		  			</a>
+		  		</li>
+		  		<li>
+		  			<a href="https://www.linkedin.com/in/alastairdant">
+		  				<span class="genericon genericon-linkedin"></span>
+		  			</a>
+		  		</li>
+		  		<li>
+		  			<a href="https://twitter.com/ajdant">
+		  				<span class="genericon genericon-twitter"></span>
+		  			</a>
+		  		</li>
+		  		<li>
+		  			<a href="https://github.com/rflow">
+		  				<span class="genericon genericon-github"></span>
+		  			</a>
+		  		</li>
+		  	</ul>
 		  </div>
 		</div>
 	<?php endif; ?>
