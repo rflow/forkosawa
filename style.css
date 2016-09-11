@@ -2094,13 +2094,26 @@ img#wpstats { display: none; }
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	transition: opacity 1s;
+	transition: opacity 0.5s;
 	opacity: 0.5;
 	cursor: pointer;
 }
 
 .rflow-contact-me a:hover {
 	opacity: 1;
+}
+
+.rflow-contact-me a:hover:before{
+	position: absolute;
+	right: 35px;
+	top: 4px;
+	border: 1px solid #ccc;
+	padding: 3px 6px;
+	background: #fafafa;
+	content: attr(data-title);
+	font-size: 14px;
+	color: #333;
+	z-index: 10;
 }
 
 .rflow-contact-me .genericon {
@@ -2152,8 +2165,8 @@ h1.rflow-title {
 	width: 70px;
 }
 
-.rflow-info-value {
-
+.rflow-info-value a {
+	color: #146a8f;
 }
 
 .posts .post, .rflow-vcard {
@@ -2570,7 +2583,12 @@ h1.rflow-title {
 	}
 
 	.rflow-logo {
-		display: none;
+    position: absolute;
+		left: -14px;
+    top: -18px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
 	}
 
 	.rflow-title-box a {

@@ -7,44 +7,52 @@
 		  <div class="rflow-mugshot"></div>
 		  <div class="rflow-vital-statistics">
 		    <h1 class="rflow-title">Alastair Dant</h1>
-		    <p class="rflow-role">Senior Product Engineer</p>
+		    <p class="rflow-role">Interactive Graphics Specialist</p>
 		    <p class="rflow-asl">
 		      <span>SF Bay Area, CA</span><span> | </span><span>Computer Software</span>
 		    </p>
 		    <table class="rflow-info-table">
 		      <tr>
 		        <td class="rflow-info-field">Current</td>
-		        <td class="rflow-info-value">Lead UI Engineer, Riffyn, Inc</td>
+		        <td class="rflow-info-value">
+		        	<a href="http://riffyn.com">Interactive Lead, Riffyn, Inc</a>
+		        </td>
 		      </tr>
 		      <tr class="rflow-former">
 		        <td class="rflow-info-field">Previously</td>
-		        <td class="rflow-info-value">New York Times, Guardian News, Mind Candy</td>
+		        <td class="rflow-info-value">
+		        	<a href="http://www.nytimes.com/interactive/2014/12/29/us/year-in-interactive-storytelling.html">New York Times</a>, &nbsp;
+		        	<a href="https://www.theguardian.com/profile/guardian-interactive-department">Guardian News</a>, &nbsp;
+		        	<a href="http://mindcandy.com">Mind Candy</a>
+		        </td>
 		      </tr>
 		      <tr class="rflow-former">
 		        <td class="rflow-info-field">Education</td>
-		        <td class="rflow-info-value">University College London</td>
+		        <td class="rflow-info-value">
+		        	<a href="http://www.ucl.ac.uk/pals">Cognitive Science, University College London</a>
+		        </td>
 		      </tr>
 		    </table>
 		  </div>
 		  <div class="rflow-contact-me">
 		  	<ul>
 		  		<li>
-		  			<a href="mail-to:contact@recursiveflow.com">
+		  			<a data-title="Email" href="mail-to:contact@recursiveflow.com">
 		  				<span class="genericon genericon-mail"></span>
 		  			</a>
 		  		</li>
 		  		<li>
-		  			<a href="https://www.linkedin.com/in/alastairdant">
+		  			<a data-title="LinkedIn" href="https://www.linkedin.com/in/alastairdant">
 		  				<span class="genericon genericon-linkedin"></span>
 		  			</a>
 		  		</li>
 		  		<li>
-		  			<a href="https://twitter.com/ajdant">
+		  			<a data-title="Twitter" href="https://twitter.com/ajdant">
 		  				<span class="genericon genericon-twitter"></span>
 		  			</a>
 		  		</li>
 		  		<li>
-		  			<a href="https://github.com/rflow">
+		  			<a data-title="GitHub" href="https://github.com/rflow">
 		  				<span class="genericon genericon-github"></span>
 		  			</a>
 		  		</li>
