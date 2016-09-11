@@ -869,7 +869,12 @@ body a,
 /* -------------------------------------------------------------------------------- */
 
 
-.post.single { background: #fff; }
+.post.single { 
+	background: #fff; 
+	-webkit-box-shadow: 1px 0px 7px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:    1px 0px 7px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:         1px 0px 7px 0px rgba(0, 0, 0, 0.1);
+}
 
 .post-inner {
 	width: 620px;
@@ -883,7 +888,7 @@ body a,
 
 
 .post.single .post-title {
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 120%;
 	font-weight: 700;
 	margin-bottom: 40px;
@@ -970,6 +975,7 @@ body a,
 .post-navigation { 
 	background: #f2f2f2; 
 	min-height: 2px;
+	display: none;
 }
 
 .post-navigation a {
@@ -2359,7 +2365,11 @@ h1.rflow-title {
 	
 	.posts .post-container { width: 50%; }
 	
-	
+	.post.single .post-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-top: 20px;
+	}
 }
 
 
@@ -2403,8 +2413,9 @@ h1.rflow-title {
 	.post.single .post-inner { padding-top: 30px; }
 	
 	.post.single .post-title {
-		font-size: 1.75em;
-		margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-top: 15px;
 	}
 	
 	body.single-post .content.thin,

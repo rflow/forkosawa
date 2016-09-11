@@ -9,7 +9,7 @@
 		    <h1 class="rflow-title">Alastair Dant</h1>
 		    <p class="rflow-role">Interactive Graphics Specialist</p>
 		    <p class="rflow-asl">
-		      <span>SF Bay Area, CA</span><span> | </span><span>Computer Software</span>
+		      <span>SF Bay Area, CA</span><span> | </span><span>Over 15 years experience</span>
 		    </p>
 		    <table class="rflow-info-table">
 		      <tr>
