@@ -1257,7 +1257,7 @@ img.alignnone,
 .alignnone img {
 	display: block;
 	box-sizing: border-box;
-	padding: 5px;
+	/*padding: 5px;*/
 	border: 1px solid #EEE;
 }
 
