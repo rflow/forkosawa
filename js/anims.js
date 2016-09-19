@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
       $logo = $(".rflow-logo"),
       $anim = $(".rflow-page-anim"),
       $home = $(".home-page-content");
-      
+
   function drawLogo (el) {
     var canvas = new compass.AnimationCanvas(el, { w: 1, h: 1 }, 0.05),
         anim = new compass.AnimationSequence(0);
@@ -13,18 +13,26 @@ jQuery(document).ready(function($) {
 
     var r = canvas.width / 4,
         center = compass.point(r*2, r*2),
-        sides = 14;
+        sides = 16;
 
-    anim.addStep("draw circle", { onto: circles, at: center, r: r*0.4, dir: "cw", style: "line-b" }, 300);  
+    circles
+      .append("circle")
+      .style("fill", "white")
+      .attr("cx", 2*r)
+      .attr("cy", 2*r)
+      .attr("r", 2*r);
+
+    anim.addStep("draw circle", { onto: circles, at: center, r: r*2.0, dir: "ccw", style: "outline" }, 300);
+    anim.addStep("draw circle", { onto: circles, at: center, r: r*0.3, dir: "cw", style: "outline" }, 300);  
 
     d3.range(sides).forEach(function (i) {
       var a = compass.τ * i/sides,
-          p = compass.point.fromPolar(r*1.2, a, center);
+          p = compass.point.fromPolar(r, a, center);
 
-      anim.addStep("draw circle", { onto: circles, at: p, r: r*0.8, dir: "cw", style: "line-a" }, 30)
+      anim.addStep("draw circle", { onto: circles, at: p, r: r*0.7, dir: "cw", style: "line-a" }, 30)
     })
 
-    anim.addStep("draw circle", { onto: circles, at: center, r: r*2.0, dir: "cw", style: "line-b" }, 600);
+    anim.addStep("draw circle", { onto: circles, at: center, r: r*1.7, dir: "cw", style: "line-a" }, 300);
 
     anim.play();
   }
@@ -91,16 +99,20 @@ jQuery(document).ready(function($) {
     d3.timer(render);
   }
 
+  // $doc.find("body").empty().append($logo);
+
   drawLogo($logo[0]);
 
   setTimeout(function () {
     var containerWidth = $doc.width(),
         containerHeight = $doc.height();
 
-    $anim.attr("width", containerWidth + "px");
-    $anim.attr("height", containerHeight + "px");
-    
-    animate($anim[0]);
+    if (containerWidth > 1000) {
+      $anim.attr("width", containerWidth + "px");
+      $anim.attr("height", containerHeight + "px"); 
+
+      animate($anim[0]);      
+    }
   }, 1000);
 
 })

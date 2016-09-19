@@ -891,9 +891,23 @@ body a,
 	font-size: 1.5em;
 	line-height: 120%;
 	font-weight: 700;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 	word-break: break-word;
 	-ms-word-break: break-word;
+}
+
+.post.single .post-date {
+	font-size: 0.65em;
+  color: #666;
+  line-height: 1;
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.post.single .post-header {
+	margin-bottom: 25px;
 }
 
 .post.single .post-title a { color: #333; }
@@ -1040,6 +1054,7 @@ body a,
 
 .post-content { color: #333; }
 
+.post .post-content a { color: #0f77a4; }
 .post-content a:hover { text-decoration: underline; }
 
 .post-content p,
@@ -1050,8 +1065,11 @@ body a,
 .post-content dl,
 .post-content .wp-caption,
 .post-content pre {
-	line-height: 170%;
-	margin-bottom: 1.1em;
+/*	line-height: 170%;
+	margin-bottom: 1.1em;*/
+  font-size: 0.9em;
+	line-height: 1.4;
+  margin-bottom: 1.1em;
 }
 
 .post-content > *:first-child { margin-top: 0; }
@@ -2043,6 +2061,18 @@ img#wpstats { display: none; }
   top: -7.5px;
   width: 50px;
   height: 50px;
+  background-color: rgba(255,255,255);
+}
+
+.rflow-logo svg {
+	fill: #fff;
+	/*stroke-opacity: 0.5;*/
+}
+
+.rflow-logo .outline {
+	fill: none;
+	stroke: #666;
+	stroke-width: 2px;
 }
 
 .rflow-logo .line-a {
@@ -2053,8 +2083,8 @@ img#wpstats { display: none; }
 
 .rflow-logo .line-b {
 	fill: none;
-	stroke: #888;
-	stroke-width: 2px;
+	stroke: #aaa;
+	stroke-width: 1px;
 }
 
 .rflow-vcard {
@@ -2081,7 +2111,7 @@ img#wpstats { display: none; }
 	-webkit-flex: 1 0 auto;
 	flex: 1 0 auto;
 	margin-top: 3px;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .rflow-contact-me {
@@ -2595,7 +2625,7 @@ h1.rflow-title {
 
 	.rflow-logo {
     position: absolute;
-		left: -14px;
+		left: -17px;
     top: -18px;
     width: 50px;
     height: 50px;
@@ -2621,22 +2651,34 @@ h1.rflow-title {
     height: 150px;
     background-size: cover;
 	}
+
+	.post-content p {
+		font-size: 0.8em;
+	}
 }
 
 @media (max-width: 600px) {
+	.rflow-logo {
+    position: absolute;
+		left: -10px;
+    top: -13px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.2;
+	}
+
 	.rflow-vcard {
 		position: relative;
 		width: 100%;
 		height: 32vw;
-		padding: 1vw;
+		padding: 2vw;
 	}
 
 	.rflow-mugshot {
 		-webkit-flex: 0 0 30vw;
 		flex: 0 0 30vw;
-	  width: 30vw;
-	  height: 30vw;
-		background-image: url(images/photos/mugshot.jpg);
+	  width: 28vw;
+    height: 28vw;
 	}
 
 /*	.rflow-vital-statistics {
@@ -2654,12 +2696,13 @@ h1.rflow-title {
 
 	.rflow-vital-statistics .rflow-role {
     line-height: 1;
-    margin-bottom: 1vw;
+    margin-bottom: 1px;
     font-size: 4vw;
 	}
 
 	.rflow-vital-statistics .rflow-asl {
 	  line-height: 11px;
+	  margin-bottom: 5px;
 	}
 
 	.rflow-asl span {

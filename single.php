@@ -58,7 +58,8 @@
 				<div class="post-header">
 													
 					<h1 class="post-title"><?php the_title(); ?></h1>
-															
+					<div class="post-date"><?php the_date(get_option('date_format')); ?></div>
+
 				</div> <!-- /post-header -->
 				    
 			    <div class="post-content">
@@ -94,7 +95,6 @@
 					?>
 				
 					<ul>
-						<li class="post-date"><a href="<?php the_permalink(); ?>"><?php the_date(get_option('date_format')); ?></a></li>
 						<?php if (has_category()) : ?>
 							<li class="post-categories"><?php _e('In','fukasawa'); ?> <?php the_category(', '); ?></li>
 						<?php endif; ?>
